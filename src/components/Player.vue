@@ -1,11 +1,11 @@
 <template>
-  <div class="content">
+  <div class="content" v-if="track && track.album">
       <p>
           <img :src="track.album.images[0].url" alt="">
       </p>
       <p>
           <strong>{{ track.name }}</strong>
-          <small>[{{ track.duration_ms }}]</small>
+          <small>[{{ track.duration_ms | ms-to-mm }}]</small>
       </p>
       <p>
           <audio :src="track.preview_url" controls></audio>

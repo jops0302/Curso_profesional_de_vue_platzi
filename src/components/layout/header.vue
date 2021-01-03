@@ -11,7 +11,8 @@
                        </div>
                    </div>
                    <div class="navbar-end navbar-menu">
-
+                       <router-link class="navbar-item" :to="{ name: 'search' }">Buscar</router-link>
+                       <router-link class="navbar-item" to="about">Nosotros</router-link>
                    </div>
                </div>
            </header>
