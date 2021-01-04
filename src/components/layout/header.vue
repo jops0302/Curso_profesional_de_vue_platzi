@@ -11,8 +11,10 @@
                        </div>
                    </div>
                    <div class="navbar-end navbar-menu">
-                       <router-link class="navbar-item" :to="{ name: 'search' }">Buscar</router-link>
-                       <router-link class="navbar-item" to="about">Nosotros</router-link>
+                       <a @click="selectLang('en')" class="navbar-item">Ingles</a>
+                       <a @click="selectLang('es')" class="navbar-item">Español</a>
+                       <router-link class="navbar-item" to="search">{{ $t('search') }}</router-link>
+                       <router-link class="navbar-item" to="about">{{ $t('about') }}</router-link>
                    </div>
                </div>
            </header>
@@ -30,6 +32,12 @@
 <script>
 import PmPlayer from '@/components/Player.vue'
 export default {
-  components: { PmPlayer }
+  components: { PmPlayer },
+
+  methods: {
+    selectLang (lang) {
+      this.$i18n.locale = lang
+    }
+  }
 }
 </script>
