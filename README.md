@@ -1,6 +1,7 @@
 # platzi-music
 
-> app curso de vue .js platzi
+![localhost_8081_ (1)](https://user-images.githubusercontent.com/54915231/103578298-4db14b80-4ea4-11eb-9792-5000a8c0a748.png)
+
 
 ## Build Setup
 
